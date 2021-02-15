@@ -5,11 +5,7 @@ local function checkswag()
                 local plrcheck = game.Players:FindFirstChild(v.Name)
                 if plrcheck then
                     local plrID = game.Players:FindFirstChild(v.Name).UserId
-                    if plrID == 1870808489 or plrID == 1870792899 or plrID == 2051376887 then
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('Nigga 😠')
-                        end
-                    elseif plrID == 389609199 then
+                    if plrID == 389609199 then
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]Sexy Slave Aiden')
                         end
@@ -35,11 +31,7 @@ local function checkswag()
                 local plrcheck = game.Players:FindFirstChild(v.Name)
                 if plrcheck then
                     local plrID = game.Players:FindFirstChild(v.Name).UserId
-                    if plrID == 1870808489 or plrID == 1870792899 then
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('Nigga 😠')
-                        end
-                    elseif plrID == 389609199 then
+                    if plrID == 389609199 then
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]Sexy Slave Aiden')
                         end
