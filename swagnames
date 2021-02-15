@@ -5,11 +5,15 @@ local function checkswag()
                 local plrcheck = game.Players:FindFirstChild(v.Name)
                 if plrcheck then
                     local plrID = game.Players:FindFirstChild(v.Name).UserId
-                    if plrID == 389609199 then
+                    if plrID == 1870808489 or plrID == 1870792899 or plrID == 2051376887 then
+                        if v:FindFirstChildWhichIsA('Humanoid') then
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('Nigga 😠')
+                        end
+                    elseif plrID == 389609199 then
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]Sexy Slave Aiden')
                         end
-                    elseif plrID == 87521950 or plrID == 1526665944 or plrID == 130066086 then
+                    elseif plrID == 87521950 or plrID == 1526665944 or plrID == 130066086 or plrID == 200547759 then
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. v.Name)
                         end
@@ -17,24 +21,36 @@ local function checkswag()
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('Hottie Austin 🥵')
                         end
+                    elseif plrID == 1342879760 then
+                        if v:FindFirstChildWhichIsA('Humanoid') then
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤤]'.. v.Name)                        
+                        end   
                     else
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎]' .. v.Name)
                         end
                     end
                 end
-            end
-        else
-            local plrcheck = game.Players:FindFirstChild(v.Name)
-            if plrcheck then
-                local plrID = game.Players:FindFirstChild(v.Name).UserId
-                if plrID == 389609199 then
-                    if v:FindFirstChildWhichIsA('Humanoid') then
-                        v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]Sexy Slave Aiden')
-                      end
-                elseif plrID == 87521950 or plrID == 1526665944 or plrID == 130066086 then
-                    if v:FindFirstChildWhichIsA('Humanoid') then
-                        v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. v.Name)
+            else
+                local plrcheck = game.Players:FindFirstChild(v.Name)
+                if plrcheck then
+                    local plrID = game.Players:FindFirstChild(v.Name).UserId
+                    if plrID == 1870808489 or plrID == 1870792899 then
+                        if v:FindFirstChildWhichIsA('Humanoid') then
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('Nigga 😠')
+                        end
+                    elseif plrID == 389609199 then
+                        if v:FindFirstChildWhichIsA('Humanoid') then
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]Sexy Slave Aiden')
+                        end
+                    elseif plrID == 1342879760 then
+                        if v:FindFirstChildWhichIsA('Humanoid') then
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤤]'.. v.Name)
+                        end
+                    elseif plrID == 87521950 or plrID == 1526665944 or plrID == 130066086 or plrID == 200547759 then
+                        if v:FindFirstChildWhichIsA('Humanoid') then
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. v.Name)
+                        end
                     end
                 end
             end
@@ -42,4 +58,5 @@ local function checkswag()
     end
 end
 
-local success, err = pcall(checkswag())
+
+checkswag()
