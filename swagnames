@@ -50,5 +50,8 @@ local function checkswag()
     end
 end
 
-
-checkswag()
+coroutine.resume(coroutine.create(function()
+    while wait(3) do
+        checkswag()
+    end
+end))
