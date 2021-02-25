@@ -1,26 +1,21 @@
+local ADMINS = {
+    87521950, -- Lerkermer
+    1342879760, -- w_6u
+    200547759, -- Mas2n
+    2351144328, -- SusLeveI100
+    2327113988, -- HaremGodA1den
+}
 local function checkswag()
     for i,v in pairs(game:GetService('Workspace').Players:GetChildren()) do
         if v:FindFirstChild('UpperTorso') then
             if not v:FindFirstChild('UpperTorso'):FindFirstChild('OriginalSize') then
-                local plrcheck = game.Players:FindFirstChild(v.Name)
+                local plrcheck = game:GetService('Players'):FindFirstChild(v.Name)
                 if plrcheck then
-                    local plrID = game.Players:FindFirstChild(v.Name).UserId
-                    if plrID == 389609199 then
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]Sexy Slave Aiden')
-                        end
-                    elseif plrID == 87521950 or plrID == 1526665944 or plrID == 130066086 or plrID == 200547759 then
+                    local plrID = game:GetService('Players'):FindFirstChild(v.Name).UserId
+                    if table.find(ADMINS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]' .. v.Name)
                         end
-                    elseif plrID == 1244437708 then
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('Hottie Austin 🥵')
-                        end
-                    elseif plrID == 1342879760 then
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤤]'.. v.Name)                        
-                        end   
                     else
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎]' .. v.Name)
@@ -31,15 +26,7 @@ local function checkswag()
                 local plrcheck = game.Players:FindFirstChild(v.Name)
                 if plrcheck then
                     local plrID = game.Players:FindFirstChild(v.Name).UserId
-                    if plrID == 1497725694 then
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('Shab')
-                        end
-                    elseif plrID == 1342879760 then
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤤]'.. v.Name)
-                        end
-                    elseif plrID == 87521950 or plrID == 1526665944 or plrID == 130066086 or plrID == 200547759 then
+                    if table.find(ADMINS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]' .. v.Name)
                         end
