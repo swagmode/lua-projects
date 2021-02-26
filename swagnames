@@ -15,7 +15,7 @@ local function checkswag()
                     local plrID = game:GetService('Players'):FindFirstChild(v.Name).UserId
                     if table.find(ADMINS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[test]' .. v.Name)
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]' .. v.Name)
                         end
                     else
                         if v:FindFirstChildWhichIsA('Humanoid') then
