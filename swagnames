@@ -39,3 +39,9 @@ local function checkswag()
 end
 
 local succ, errr = pcall(checkswag)
+if succ then
+    print(succ .. " || sorry for print spam i need to test")
+else
+    print(errr)
+    local succc, errrr = pcall(checkswag)
+end
