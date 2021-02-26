@@ -39,22 +39,4 @@ local function checkswag()
 end
 
 local succ, errr = pcall(checkswag)
-if succ then
-    print(succ .. " || sorry for print spam i need to test")
-else
-    print(errr)
-    wait(3)
-    local succc, errrr = pcall(checkswag)
-    if succc then
-        print(succ .. " || this worked the 2nd time")
-    else
-        print(errrr)   
-        wait(3)
-        local succcc, errrrr = pcall(checkswag)
-        if succcc then
-            print(succ .. " || this worked the 3nd time")
-        else
-            print(errrrr)
-        end
-    end
-end
+
