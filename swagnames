@@ -6,6 +6,9 @@ local ADMINS = {
     44694442, -- MinecraftFan
     2327113988, -- HaremGodA1den
 }
+local MODS = {
+    430325969, KasysProperty
+}
 local function checkswag()
     for i,v in pairs(game:GetService('Workspace').Players:GetChildren()) do
         if v:FindFirstChild('UpperTorso') then
@@ -16,6 +19,10 @@ local function checkswag()
                     if table.find(ADMINS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]' .. v.Name)
+                        end
+                    elseif table.find(MODS, plrID) then
+                        if v:FindFirstChildWhichIsA('Humanoid') then
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🍆]' .. v.Name)
                         end
                     else
                         if v:FindFirstChildWhichIsA('Humanoid') then
@@ -30,6 +37,10 @@ local function checkswag()
                     if table.find(ADMINS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]' .. v.Name)
+                        end
+                    elseif table.find(MODS, plrID) then
+                        if v:FindFirstChildWhichIsA('Humanoid') then
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🍆]' .. v.Name)
                         end
                     end
                 end
