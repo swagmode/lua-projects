@@ -20,7 +20,7 @@ local function checkswag()
                     if table.find(ADMINS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]' .. v.Name)
-                            print('bob')
+                      
                         end
                     elseif table.find(MODS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then
