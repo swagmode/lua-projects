@@ -1,7 +1,7 @@
 PremiumIDS = {
-  44694442, -- Lerkermur
-  2351144328, -- suslevel9999
-  200547759, -- Mas2n
+  [44694442] = true, -- Lerkermur
+  [2351144328] = true, -- suslevel9999
+  [200547759] = true, -- Mas2n
 
 }
 return PremiumIDS
