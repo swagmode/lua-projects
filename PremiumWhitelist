@@ -1,4 +1,4 @@
-local PremiumIDS = {
+PremiumIDS = {
   44694442, -- Lerkermur
   2351144328, -- suslevel9999
   200547759, -- Mas2n
