@@ -1,7 +1,18 @@
 PremiumIDS = {
-  [44694442] = true, -- Lerkermur
-  [2351144328] = true, -- suslevel9999
-  [200547759] = true, -- Mas2n
-
+[2351144328] = true, -- Woz
+[200547759] = true, -- Mason
+[44694442] = true, -- Lerk main
+[2025172918] = true, -- lerk alt
+[2351138441] = true, -- woz alt
+[1826873689] = true, -- dyswrld paid 5000 robux
+[296946548] = true, -- rdestinye paid 15 usd pp
+[177473954] = true, -- 9vag paid 15 us pp
+[430325969] = true, -- givesloppy nitro friend discount
+[186150627] = true, -- lasygivingmehead nitro friend discount
+[1910682741] = true, -- giveawaywinner
+[2200137006] = true, -- giveawaywinner
+[1654108630] = true, -- giveawaywinner
+[2026838100] = true, -- giveawaywinner
+[145708339] = true, -- paid 5000 robux black guy
 }
 return PremiumIDS
