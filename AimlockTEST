@@ -1,0 +1,87 @@
+local mt = getrawmetatable(game)
+local pos = Vector3.new(0,0,0)
+local aimlocked = 'none'
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+local old = mt.__namecall
+setreadonly(mt,false)
+mt.__namecall = newcclosure(function(self, ...)
+  local args = {...}
+  if getnamecallmethod() == 'FireServer' and self.Name == 'MainEvent' then
+    if tostring(args[1]) == 'UpdateMousePos' then
+        if aimlocked ~= 'none' then
+            args[2] = pos
+        end
+    end
+  end
+  return old(self, unpack(args))
+end)
+
+local increase = 0.3
+coroutine.resume(coroutine.create(function()
+    game:GetService('RunService').Heartbeat:Connect(function()
+        if aimlocked ~= 'none' then
+            local enemy = game.Workspace.Players:FindFirstChild(aimlocked)
+            if enemy then
+                local pingvalue = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
+                local split = string.split(pingvalue,'(')
+                local ping = tonumber(split[1]) 
+                local xchange
+                local zchange
+                local xp = tostring(enemy.Humanoid.MoveDirection.X)
+                local zp = tostring(enemy.Humanoid.MoveDirection.Z)
+                if ping < 70 then
+                    increase = 0.27
+                elseif ping < 140 then
+                    increase = 0.42
+                elseif ping < 200 then
+                    increase = 0.7
+                elseif ping < 350 then
+                    increase = 1.2
+                else 
+                    increase = 1.6
+                end
+                print(increase)
+                if string.find(xp, '-') then
+                    xchange = -increase
+                else
+                    xchange = increase
+                end
+                if string.find(zp, '-') then
+                    zchange = -increase
+                else
+                    zchange = increase
+                end
+                if enemy.Humanoid.MoveDirection.X == 0 then
+                    xchange = 0
+                end
+                if enemy.Humanoid.MoveDirection.Z == 0 then
+                    zchange = 0 
+                end
+                pos = Vector3.new(enemy.Head.Position.X + enemy.Humanoid.MoveDirection.X + xchange, enemy.Head.Position.Y, enemy.Head.Position.Z + enemy.Humanoid.MoveDirection.Z + zchange)
+            end
+        end
+    end)
+end))
+
+
+game:GetService('UserInputService').InputBegan:Connect(function(key,b)
+    if key.KeyCode == Enum.KeyCode.E and not b then
+        local LowerTorso = mouse.Target.Parent:FindFirstChild('LowerTorso')
+        if not LowerTorso then
+            LowerTorso = mouse.Target.Parent.Parent:FindFirstChild('LowerTorso')
+        end
+        if LowerTorso then
+            if LowerTorso.Parent.Name == 'SpecialParts' then
+                aimlocked = LowerTorso.Parent.Parent.Parent.Name
+                player.PlayerGui.MainScreenGui.Bar.HP.TextLabel.Text = (aimlocked)
+            else
+                aimlocked = LowerTorso.Parent.Name
+                player.PlayerGui.MainScreenGui.Bar.HP.TextLabel.Text = (aimlocked)
+            end
+        else
+            aimlocked = 'none'
+            player.PlayerGui.MainScreenGui.Bar.HP.TextLabel.Text = ('Not Locked')
+        end
+    end
+end)
