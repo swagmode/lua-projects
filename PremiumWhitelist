@@ -16,5 +16,6 @@ PremiumIDS = {
 [2026838100] = true, -- giveawaywinner
 [145708339] = true, -- paid 5000 robux black guy
 [471086253] = true, -- paid 4000 robux
+[607329432] = true, -- paid 10 usd pp 
 }
 return PremiumIDS
