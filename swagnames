@@ -23,6 +23,8 @@ local function checkswag()
                         v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🍆]' .. v.Name)
                     elseif plrID == 371768392 or plrID == 1490343797
                         v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. v.Name)
+                    else
+                       v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎]' .. v.Name)
                     end
                 end
             elseif not v:FindFirstChild('LowerTorso'):FindFirstChild('OriginalSize') then
