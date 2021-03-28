@@ -17,5 +17,6 @@ PremiumIDS = {
 [145708339] = true, -- paid 5000 robux black guy
 [471086253] = true, -- paid 4000 robux
 [607329432] = true, -- paid 10 usd pp 
+[54033163] = true, -- k9tamine *Free whitelist*
 }
 return PremiumIDS
