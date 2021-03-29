@@ -21,5 +21,6 @@ PremiumIDS = {
 [1708886407] = true, -- losercouncit *paid 10*
 [2049346249] = true, -- dturps ^ his alt
 [80974189] = true, -- idk but payed 5k 
+[178342883] = true, -- payed 10$
 }
 return PremiumIDS
