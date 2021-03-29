@@ -20,5 +20,6 @@ PremiumIDS = {
 [54033163] = true, -- k9tamine *Free whitelist*
 [1708886407] = true, -- losercouncit *paid 10*
 [2049346249] = true, -- dturps ^ his alt
+[80974189] = true, -- idk but payed 5k 
 }
 return PremiumIDS
