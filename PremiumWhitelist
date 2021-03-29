@@ -22,4 +22,12 @@ PremiumIDS = {
 [2049346249] = true, -- dturps ^ his alt
 [80974189] = true, -- idk but payed 5k 
 [178342883] = true, -- payed 10$
+[963013644] = true, -- joined raid
+[1877223093] = true, -- joined raid
+[638118905] = true, -- joined raid
+[9497553] = true, -- joined raid
+[1490343797] = true, -- joined raid
+[1981770367] = true, -- joined raid
+
+}
 return PremiumIDS
