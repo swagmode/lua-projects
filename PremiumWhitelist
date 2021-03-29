@@ -26,5 +26,5 @@ PremiumIDS = {
 [1877223093] = true, -- joined raid
 [638118905] = true, joined raid
 [9497553] = true, joined raid
-}
+[1490343797] = true, joined raid
 return PremiumIDS
