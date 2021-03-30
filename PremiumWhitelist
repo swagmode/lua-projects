@@ -29,6 +29,6 @@ PremiumIDS = {
 [1490343797] = true, -- *Free* d19y
 [1981770367] = true, -- *Free* SPY_EVAN0ACE
 [555710383] = true, -- *Free* SympingForArii
-
+[17597481] = true, -- *Free* john20001
 }
 return PremiumIDS
