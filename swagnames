@@ -34,6 +34,10 @@ local function checkswag()
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤑]' .. v.Name)
                         end
+                    elseif plrID == 1688589423 then 
+                        if v:FindFirstChildWhichIsA('Humanoid') then
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('kristina kristina')
+                        end
                     elseif plrID == 555710383 then
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]' .. v.Name)
@@ -67,6 +71,10 @@ local function checkswag()
                     elseif plrID == 555710383 then
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]' .. v.Name)
+                        end
+                    elseif plrID == 1688589423 then 
+                        if v:FindFirstChildWhichIsA('Humanoid') then
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('kristina kristina')
                         end
                     else
                         if v:FindFirstChildWhichIsA('Humanoid') then
