@@ -33,6 +33,7 @@ PremiumIDS = {
 [2005620253] = true, -- *10$ paypal* supremeittachi 
 [1647061878] = true, -- *10$ paypal* SteppinOnGDK
 [1688589423] = true, -- *Free* Kristina
+[1801218662] = true, -- *Free* Kristina friend
 
 }
 return PremiumIDS
