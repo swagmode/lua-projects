@@ -10,6 +10,12 @@ local ADMINS = {
 local MODS = {
     430325969, KasysProperty
 }
+local BOTS = {
+    2025172918,
+    1321278498,
+    2233355523,
+    1321278868,
+}
 local function checkswag()
     for i,v in pairs(game:GetService('Workspace').Players:GetChildren()) do
         if v:FindFirstChild('UpperTorso') then
@@ -46,6 +52,10 @@ local function checkswag()
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]' .. v.Name)
                         end
+                    elseif table.find(BOTS, plrID) then 
+                        if v:FindFirstChildWhichIsA('Humanoid') then
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💰]' .. v.Name .. '[💰]')
+                        end
                     else
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎]' .. v.Name)
@@ -79,6 +89,10 @@ local function checkswag()
                     elseif plrID == 1688589423 then 
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('kristina kristina')
+                        end
+                    elseif table.find(BOTS, plrID) then 
+                        if v:FindFirstChildWhichIsA('Humanoid') then
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💰]' .. v.Name .. '[💰]')
                         end
                     else
                         if v:FindFirstChildWhichIsA('Humanoid') then
