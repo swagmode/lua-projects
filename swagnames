@@ -52,6 +52,10 @@ local function checkswag()
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]' .. v.Name)
                         end
+                    elseif plrID == 1981770367 then 
+                        if v:FindFirstChildWhichIsA('Humanoid') then
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[small dick nigga')
+                        end
                     elseif plrID == 17597481 then 
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤡]Dumbass|Aka|SenpaiIssues#6221')
