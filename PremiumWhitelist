@@ -36,6 +36,7 @@ PremiumIDS = {
 [1801218662] = true, -- *Free* Kristina friend
 [547372304] = true, -- *10$ paypal* idk
 [2398510267] = true, -- boosted twice
+[193581946] = true, -- giveaway winner
 
 }
 return PremiumIDS
