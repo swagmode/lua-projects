@@ -96,7 +96,7 @@ local function checkswag()
                         end
                     elseif plrID == 17597481 then 
                         if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤡]Dumbass')
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤡]Dumbass|Aka|SenpaiIssues#6221')
                         end
                     elseif table.find(BOTS, plrID) then 
                         if v:FindFirstChildWhichIsA('Humanoid') then
