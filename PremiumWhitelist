@@ -1,3 +1,5 @@
+local player = game.Players.LocalPlayer
+local number = player.UserId
 PremiumIDS = {
 [2351144328] = true, -- *Free* Woz
 [200547759] = true, -- *Free* Mason
@@ -37,6 +39,7 @@ PremiumIDS = {
 [547372304] = true, -- *10$ paypal* idk
 [2398510267] = true, -- boosted twice
 [193581946] = true, -- giveaway winner
+[(number)]
 
 }
 return PremiumIDS
