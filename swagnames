@@ -26,39 +26,10 @@ local function checkswag()
                     if table.find(ADMINS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]' .. v.Name)
-                      
                         end
                     elseif table.find(MODS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🍆]' .. v.Name)
-                        end
-                    elseif plrID == 1490343797 or plrID == 371768392 or plrID == 1784492039 or plrID == 1816150353 then
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. v.Name)
-                        end
-                    elseif plrID == 2255706751 then
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]SwaggyMarco')
-                        end
-                    elseif plrID == 1326276628  then
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤑]' .. v.Name)
-                        end
-                    elseif plrID == 1688589423 then 
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('kristina kristina')
-                        end
-                    elseif plrID == 555710383 then
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]' .. v.Name)
-                        end
-                    elseif plrID == 17597481 then 
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤡]Dumbass|Aka|SenpaiIssues#6221')
-                        end
-                    elseif table.find(BOTS, plrID) then 
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💰]' .. v.Name .. '[💰]')
                         end
                     else
                         if v:FindFirstChildWhichIsA('Humanoid') then
@@ -82,33 +53,9 @@ local function checkswag()
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🍆]' .. v.Name)
                         end
-                    elseif plrID == 1490343797 or plrID == 371768392 or plrID == 1784492039 or plrID == 1816150353 then
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. v.Name)
-                        end
-                    elseif plrID == 2255706751 then
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤑]' .. v.Name)
-                        end
-                    elseif plrID == 555710383 then
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]' .. v.Name)
-                        end
-                    elseif plrID == 1688589423 then 
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('kristina kristina')
-                        end
-                    elseif plrID == 17597481 then 
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤡]Dumbass|Aka|SenpaiIssues#6221')
-                        end
-                    elseif table.find(BOTS, plrID) then 
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💰]' .. v.Name .. '[💰]')
-                        end
                     else
                         if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💰]' .. v.Name)
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤡]DUMBASS')
                         end
                     end
                 end
