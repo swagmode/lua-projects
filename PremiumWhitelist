@@ -1,5 +1,6 @@
 local player = game.Players.LocalPlayer.UserId
 PremiumIDS = {
 [123545689] = true,
+[893275435] = true,
 }
 return PremiumIDS
