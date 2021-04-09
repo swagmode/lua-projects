@@ -15,6 +15,9 @@ local STARS = {
     331601222, -- wozispapi
     1823901606, -- bbtttrflyy
 }
+local BOOSTERS = {
+    1234567890
+}
 local function checkswag()
     for i,v in pairs(game:GetService('Workspace').Players:GetChildren()) do
         if v:FindFirstChild('UpperTorso') then
@@ -33,6 +36,10 @@ local function checkswag()
                     elseif table.find(STARS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. v.Name)
+                        end
+                    elseif table.find(BOOSTER, plrID) then
+                        if v:FindFirstChildWhichIsA('Humanoid') then
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👾] .. v.Name)
                         end
                     elseif plrID == 1688589423 then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
