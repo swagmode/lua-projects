@@ -30,7 +30,7 @@ local function checkswag()
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🍆]' .. v.Name)
                         end
-                    elseif table.find(STARS, plrID then
+                    elseif table.find(STARS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. v.Name)
                         end
