@@ -18,6 +18,7 @@ local BOTS = {
 }
 local STARS = {
     654024258,
+    331601222,
 }
 local function checkswag()
     for i,v in pairs(game:GetService('Workspace').Players:GetChildren()) do
