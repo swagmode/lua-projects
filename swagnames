@@ -11,9 +11,9 @@ local MODS = {
     430325969, -- KasysProperty
 }
 local STARS = {
-    654024258,
-    331601222,
-    1823901606,
+    654024258, -- ripretro
+    331601222, -- wozispapi
+    1823901606, -- bbtttrflyy
 }
 local function checkswag()
     for i,v in pairs(game:GetService('Workspace').Players:GetChildren()) do
