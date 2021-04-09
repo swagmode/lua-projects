@@ -8,7 +8,7 @@ local ADMINS = {
     2214013158, -- MiIIionares
 }
 local MODS = {
-    430325969, KasysProperty
+    430325969, -- KasysProperty
 }
 local STARS = {
     654024258,
