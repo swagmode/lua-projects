@@ -10,12 +10,6 @@ local ADMINS = {
 local MODS = {
     430325969, KasysProperty
 }
-local BOTS = {
-    2025172918,
-    1321278498,
-    2233355523,
-    1321278868,
-}
 local STARS = {
     654024258,
     331601222,
@@ -47,28 +41,6 @@ local function checkswag()
                     else
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎]' .. v.Name)
-                        end
-                    end
-                end
-            elseif not v:FindFirstChild('LowerTorso'):FindFirstChild('OriginalSize') then
-                local plrcheck = game:GetService('Players'):FindFirstChild(v.Name)
-                if plrcheck then
-                    local plrID = game:GetService('Players'):FindFirstChild(v.Name).UserId
-                    if plrID == 44694442 then
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('yahyeee#7643')
-                        end
-                    elseif table.find(ADMINS, plrID) then
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]' .. v.Name)
-                        end
-                    elseif table.find(MODS, plrID) then
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🍆]' .. v.Name)
-                        end
-                    else
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤡]DUMBASS')
                         end
                     end
                 end
