@@ -17,6 +17,7 @@ local STARS = {
 }
 local BOOSTERS = {
     1234567890,
+    1826873689, -- yo bugga
 }
 local function checkswag()
     for i,v in pairs(game:GetService('Workspace').Players:GetChildren()) do
