@@ -35,7 +35,7 @@ local function checkswag()
                         end
                     elseif table.find(STARS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. v.Name)
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. v.Name) 
                         end
                     elseif table.find(BOOSTERS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then
@@ -44,6 +44,10 @@ local function checkswag()
                     elseif plrID == 1688589423 then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('kristina kristina')
+                        end
+                    elseif plrID == 2053083442  then
+                        if v:FindFirstChildWhichIsA('Humanoid') then           
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌈]' .. v.Name)
                         end
                     else
                         if v:FindFirstChildWhichIsA('Humanoid') then
