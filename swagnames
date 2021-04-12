@@ -21,6 +21,15 @@ local BOOSTERS = {
     195627100, -- fyn
     
 }
+local MONEYNAME = {
+    1622658484, -- Name123245
+}
+
+local formatNumber = (function(n)
+    n = tostring(n)
+    return n:reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
+end)
+
 local function checkswag()
     for i,v in pairs(game:GetService('Workspace').Players:GetChildren()) do
         if v:FindFirstChild('UpperTorso') then
@@ -55,6 +64,10 @@ local function checkswag()
                     elseif plrID == 2053083442  then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌈]' .. v.Name) 
+                        end
+                    elseif plrID == 1622658484  then
+                        if v:FindFirstChildWhichIsA('Humanoid') then           
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = (formatNumber(game.Players:FindFirstChild(v.Name).DataFolder.Currency.Value))
                         end
                     elseif plrID == 2476489068 then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
