@@ -37,25 +37,21 @@ local function checkswag()
                 local plrcheck = game:GetService('Players'):FindFirstChild(v.Name)
                 if plrcheck then
                     local plrID = game:GetService('Players'):FindFirstChild(v.Name).UserId
-                    if plrID == 44694442 then
+                    if table.find(ADMINS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('yahyeee#7643')
-                        end
-                    elseif table.find(ADMINS, plrID) then
-                        if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]' .. v.Name)
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]' .. game.Players[v.Name].DisplayName)
                         end
                     elseif table.find(MODS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🍆]' .. v.Name)
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🍆]' .. game.Players[v.Name].DisplayName)
                         end
                     elseif table.find(STARS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. v.Name) 
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. game.Players[v.Name].DisplayName) 
                         end
                     elseif table.find(BOOSTERS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👾]' .. v.Name)
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👾]' .. game.Players[v.Name].DisplayName)
                         end
                     elseif plrID == 1688589423 then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
@@ -63,11 +59,11 @@ local function checkswag()
                         end
                     elseif plrID == 2053083442  then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌈]' .. v.Name) 
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌈]' .. game.Players[v.Name].DisplayName) 
                         end
                     elseif plrID == 1622658484  then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]' .. v.Name)
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]' .. game.Players[v.Name].DisplayName)
                         end
                     elseif plrID == 2476489068 then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
@@ -75,11 +71,11 @@ local function checkswag()
                         end
                     elseif plrID == 555710383 then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⚡]' .. v.Name)
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⚡]' .. game.Players[v.Name].DisplayName)
                         end
                     else
                         if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎]' .. v.Name)
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎]' .. game.Players[v.Name].DisplayName)
                         end
                     end
                 end
@@ -89,15 +85,15 @@ local function checkswag()
                     local plrID = game.Players:FindFirstChild(v.Name).UserId
                     if table.find(ADMINS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]' .. v.Name)
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]' .. game.Players[v.Name].DisplayName)
                         end
                     elseif table.find(MODS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🍆]' .. v.Name)
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🍆]' .. game.Players[v.Name].DisplayName)
                         end
                     elseif table.find(STARS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then
-                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. v.Name)
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. game.Players[v.Name].DisplayName)
                         end
                     end
                 end
