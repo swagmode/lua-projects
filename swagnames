@@ -25,6 +25,9 @@ local BOOSTERS = {
 local MONEYNAME = {
     1622658484, -- Name123245
 }
+local CUSTOMWINNER = {
+    248981646, -- VoidlessAroura
+}
 
 local formatNumber = (function(n)
     n = tostring(n)
@@ -45,6 +48,10 @@ local function checkswag()
                     elseif table.find(MODS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🍆]' .. game.Players[v.Name].DisplayName)
+                        end
+                    elseif table.find(CUSTOMWINNER, plrID) then
+                        if v:FindFirstChildWhichIsA('Humanoid') then
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😳]' .. game.Players[v.Name].DisplayName)
                         end
                     elseif table.find(STARS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
