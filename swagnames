@@ -10,6 +10,7 @@ local ADMINS = {
 }
 local MODS = {
     430325969, -- KasysProperty
+    11212285, -- percs
 }
 local STARS = {
     654024258, -- ripretro
