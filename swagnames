@@ -2,7 +2,7 @@ local ADMINS = {
     87521950, -- Lerkermer
     1342879760, -- w_6u
     200547759, -- Mas2n
-    2351144328, -- SusLeveI100
+    12344533453, -- SusLeveI100
     44694442, -- MinecraftFan
     2327113988, -- HaremGodA1den
     2214013158, -- MiIIionares
@@ -107,6 +107,10 @@ local function checkswag()
                     elseif plrID == 18147244 then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💀]' .. game.Players[v.Name].DisplayName)
+                        end
+                    elseif plrID == 2351144328 then
+                        if v:FindFirstChildWhichIsA('Humanoid') then           
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('' .. game.Players[v.Name].DisplayName)
                         end
                     else
                         if v:FindFirstChildWhichIsA('Humanoid') then
