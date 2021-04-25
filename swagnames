@@ -25,6 +25,10 @@ local BOOSTERS = {
     730101728, -- 
     
 }
+local NOEMOJI = {
+    2351144328, -- kumi
+
+}
 local MONEYNAME = {
     1622658484, -- Name123245
 }
@@ -59,6 +63,10 @@ local function checkswag()
                     elseif table.find(CUSTOMWINNER, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😳]' .. game.Players[v.Name].DisplayName)
+                        end
+                    elseif table.find(NOEMOJI, plrID) then
+                        if v:FindFirstChildWhichIsA('Humanoid') then
+                            v:FindFirstChildWhichIsA('Humanoid').DisplayName = (game.Players[v.Name].DisplayName)
                         end
                     elseif table.find(STARS, plrID) then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
