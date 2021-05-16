@@ -1,5 +1,4 @@
-
-local ModIDS = {
+ModIDS = {
     555710383, -- SympingForArii
     1708886407, -- losercouncil
     2049346249, -- losersalt
