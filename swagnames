@@ -34,9 +34,11 @@ local STARS = {
     2224078675,
     1494501304,
     1939542762,
+    2224078675,
     924595371,
     1554640923,
     2441435641, 
+    370312423,
 }
 local BOOSTERS = {
     748134395, -- fyn
@@ -72,7 +74,7 @@ local function checkswag()
                 local plrcheck = game:GetService('Players'):FindFirstChild(v.Name)
                 if plrcheck then
                     local plrID = game:GetService('Players'):FindFirstChild(v.Name).UserId
-                    if plrID == 969017656 or plrID == 200547759 then
+                    if plrID == 969017656 or plrID == 200547759 or plrID == 2432942033 then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🪐]' .. game.Players[v.Name].DisplayName) 
                         end
@@ -132,7 +134,7 @@ local function checkswag()
                         if v:FindFirstChildWhichIsA('Humanoid') then           
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('kristina kristina')
                         end
-                    elseif plrID == 1688589423 or plrID == 2251754295 then
+                    elseif plrID == 1688589423 or plrID == 2251754295 or plrID == 353886 then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😋]' .. game.Players[v.Name].DisplayName)
                         end
