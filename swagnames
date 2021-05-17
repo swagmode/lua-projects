@@ -27,6 +27,7 @@ local STARS = {
     494429223,
     51405555,
     2418360105,
+    2255706751,
     449952176,
     2357610986,
     71813210,
@@ -187,7 +188,7 @@ local function checkswag()
                         if v:FindFirstChildWhichIsA('Humanoid') then           
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('cuf#5041')
                         end
-                    elseif plrID == 555710383 or plrID == 2255706751 or plrID == 552499725 then
+                    elseif plrID == 555710383 or plrID == 552499725 then
                         if v:FindFirstChildWhichIsA('Humanoid') then           
                             v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⚡]' .. game.Players[v.Name].DisplayName)
                         end
