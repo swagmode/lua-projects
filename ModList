@@ -31,6 +31,7 @@ ModIDS = {
     [2251754295] = true,
     [71813210] = true,
     [2255706751] = true,
+    [276366492] = true,
 }
 
 return ModIDS
